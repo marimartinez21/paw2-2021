@@ -7,7 +7,7 @@
     if(isset($_POST['acclogin']))
     {
         $user = $_POST['user'];
-        $passw = $_POST['clave'];
+        $passw = $_POST['passw'];
 
         //AccesoLogin($user, $passw); Crear Funcion en procesos.php
     }
