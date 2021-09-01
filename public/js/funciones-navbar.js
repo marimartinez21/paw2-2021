@@ -1,28 +1,16 @@
-$(document).ready(function () {
-    // Funciones navbar
-    $("a.inventario").click(function (event) {
-        $("#capa").load("inventario/principal.php");
+$(document). ready(function()  {
+    /* Cargar vista usuarios*/
+    $(".user").click(function(event) {
+        $("#contenido").load("usuarios/principal.php");
         event.preventDefault();
     });
-
-    $("a.procesos-v").click(function (event) {
-        $("#capa").load("procesos_varios/principal.php");
-        event.preventDefault();
+    /* Btn Salir */
+    $(".exit-sys").click(function() {
+        if (confirm('Seguro/a en cerrar sesión'))
+        {
+            location.href = "../../index.php";
+        } else {
+            alert('Cierre de sesión cancelado...');
+        }
     });
-
-    $("a.personalizar").click(function (event) {
-        $("#capa").load("personalizar/principal.php");
-        event.preventDefault();
-    });
-
-    $("a.usuario").click(function (event) {
-        $("#capa").load("usuarios/principal.php");
-        event.preventDefault();
-    });
-
-    $("a.ventas").click(function (event) {
-        $("#capa").load("ventas/principal.php");
-        event.preventDefault();
-    });
-    //
 });
