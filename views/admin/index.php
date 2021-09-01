@@ -1,4 +1,11 @@
+<?php
+    session_start();
+    $user = $_SESSION['user'];
 
+     $redic = new Rd();
+     $redic->admin();
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,9 +30,11 @@
 </head>
 <body>
      <?php include'navbar/nav.php';?>
-     <div class="container-fluid">
+     <div class="container-fluid " id="contenido">
+         <div class="alert-seccess" style=""></div>
+         <h6><b>Bienvenido/a: <?php echo $user; ?></b></h6>
 
-
+      </div>
      </div>
 
 </body>

@@ -1,12 +1,15 @@
-
-<?php 
+<?php
     session_start();
     include '../../controllers/redireccionar.php';
-    $user = $_SESSION["user"];
+    $user = $_SESSION['user'];
+
+     $redic = new Rd();
+     $redic->operador();
 
 ?>
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +17,6 @@
     <title>Operador</title>
 </head>
 <body>
-    <h3><b>Bienvenido/a: <?php echo $user; ?> </b></h3>
+     <h3><b>Bienvenido/a: <?php echo $user; ?></b></h3>
 </body>
 </html>
