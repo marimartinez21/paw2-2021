@@ -13,7 +13,7 @@
             $estado = $result['estado'];
         }
 
-        if($estado) == 1)
+        if($estado== 1)
         {
            if(password_verify($passw,$hash))
            {
@@ -49,11 +49,5 @@
            }
         }
 
-        else
-        { 
-         header("Location:../index.php?msj=".base64_encode("El usuario no existe..."));
-        }
-
-     }
-
+        
 ?>
