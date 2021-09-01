@@ -22,7 +22,7 @@
                     $_SESSION ['idusuario']=$idusuario;
                     $_SESSION ['user']= $user;
                     $_SESSION ['tipo']= $tipo;
-                    header("location: ../views/operador/");
+                    header("location: ../views/admin/");
                 }
            
               else 
