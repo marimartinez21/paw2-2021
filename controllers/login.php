@@ -2,14 +2,16 @@
     session_start();
     include '../models/conexion.php';
     include '../models/login.php';
-    include 'procesos.php';
+    include 'prosesos.php';
 
     if(isset($_POST['acclogin']))
     {
         $user = $_POST['user'];
+        echo "<br>";
         $passw = $_POST['passw'];
 
-        //AccesoLogin($user, $passw); Crear Funcion en procesos.php
+        AccesoLogin($user, $passw);
+        
     }
     else
     {
