@@ -41,8 +41,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`idusuario`, `usuario`, `clave`, `token`, `tipo`, `estado`) VALUES
-(1, 'Lou', '$2y$10$/57FAPdGEBfW6wnoL/2RvOm2vJ3zoZj5Xq4KsTPm9M6ppWjY3Bb1C', NULL, 1, 1),
-(2, 'Leahken', '$2y$10$JKZWP6Iu6.ESREmZYdZIZ.KPlEtriNUuVE6eIyeu3q.JJsy0AqIVO', NULL, 2, 1);
+(1, 'Mari', '$2y$10$/57FAPdGEBfW6wnoL/2RvOm2vJ3zoZj5Xq4KsTPm9M6ppWjY3Bb1C', NULL, 1, 1),
+(2, 'Jorge', '$2y$10$JKZWP6Iu6.ESREmZYdZIZ.KPlEtriNUuVE6eIyeu3q.JJsy0AqIVO', NULL, 2, 1);
 
 --
 -- Índices para tablas volcadas
