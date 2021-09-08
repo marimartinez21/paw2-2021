@@ -9,7 +9,7 @@
             foreach ($data AS $result)
             {
                 $idusuario = $result['idusuario'];
-                $hash = $result['clave'];
+                $hash = $result['passw'];
                 $tipo = $result['tipo'];
                 $estado = $result['estado'];                
             }
