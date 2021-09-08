@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     function AccesoLogin($user, $passw)
     {
@@ -48,3 +49,5 @@
 
         
 ?>
+=======
+>>>>>>> 711c306b6de93748f0d1dad8283420d38798aebd
