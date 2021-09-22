@@ -66,7 +66,7 @@
         {
            if(password_verify($passw,$hash))
            {
-               if(tipo == 1) //Vista Admin
+               if($tipo == 1) //Vista Admin
                {
                     $_SESSION ['idusuario']=$idusuario;
                     $_SESSION ['user']= $user;
@@ -97,6 +97,3 @@
 
         
 ?>
-=======
->>>>>>> 711c306b6de93748f0d1dad8283420d38798aebd
->>>>>>> 7eb16301d837e6da56644729b99f03544473d741
