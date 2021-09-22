@@ -9,7 +9,7 @@
             foreach ($data AS $result)
             {
                 $idusuario = $result['idusuario'];
-                $hash = $result['passw'];
+                $hash = $result['clave'];
                 $tipo = $result['tipo'];
                 $estado = $result['estado'];                
             }
@@ -47,5 +47,21 @@
             {
                 header("Location:../index.php?msj=".base64_encode("El usuario no existe..."));
             }
+    }
+
+    /*Funcion para realizar un CRUD(Crear,leer,actualizar,borrar)*/
+    function CRUD($query,$tipo)
+    {
+        $consultas = new Procesos();
+        $data = $consultas->isdu($query,$tipo);
+        return $data;
+    }
+
+    /*Funcion para contar registros*/
+    function CountReg($query)
+    {
+        $consultas = new Procesos();
+        $data = $consultas->row_data($query);
+        return $data;
     }
 ?>

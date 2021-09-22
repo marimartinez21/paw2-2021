@@ -39,5 +39,10 @@
         </div>
             
         </div>
+
+        <?php 
+        include './modals/new_passw.php';
+        include './modals/update_user.php';
+        ?>
 </body>
 </html>
