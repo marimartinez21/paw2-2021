@@ -72,6 +72,22 @@
 
                 <div class="col-md-8">
                     <?php include 'table_usuarios.php'; ?>
+                  <?php if($num_registro > $registros);?>  
+<div style="text-align: center;">
+<?php if($pagina == 1);?>
+    <a href="" class="btn pagina" v-num = "<php  echo ($pagina + 1); ?>"
+    num-reg= "<?php echo $registros;?>">
+    <i class="fas fa-arrow-alt-cicle-right fa-2x"></i>
+    </a>
+</div> 
+<?php elseif($pagina == $paginas);?>  
+  <div style="text-align: center;">
+<a href="" class="btn pagina" v-num = "<?php echo ($pagina - 1);?>"
+   num-reg = "<?php echo $registros;?>">
+    <i class="fas fa-arrow-alt-cicle-left fa-2x"></i>
+</a>
+</div> 
+<?php  ?>                 
                 </div>
             </div>
         </div>
