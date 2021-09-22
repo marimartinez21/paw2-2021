@@ -1,5 +1,37 @@
 <script src="../../public/js/funciones-navbar.js"></script>
 <script src="../../public/js/funciones-usuarios.js"></script>
+<?php
+    include '../../../models/conexion.php';
+    include '../../../controllers/procesos.php';
+    include '../../../models/procesos.php';
+
+   $cont = 0;
+   $pagina = 0;
+
+   if(isset($_GET['num']))
+   {
+       $pagina = $_GET['num'];
+   }
+    
+   $registros = 1;
+
+   if(!$pagina)
+    {
+       $inicio = 0;
+       $pagina = 1;
+    }
+    else 
+    {
+       $inicio =($pagina-1)* $registro;
+
+    }
+
+    $query = "SELECT * FROM usuario";
+
+    $dataUser = CRUD("SELECT *FORM usuario ORDER BY idusuario LIMIT $inicio, $registros", "s");
+    $paginas = ceil($num_registro / $registro);
+    
+?>
 
 <div class="card">
   <div class="card-header bg-dark text-white">
