@@ -118,4 +118,75 @@ $(document).ready(function() {
         }
     });
 
+
+
+    /*aumenta n° registro para el paginado*/
+    $("#select-reg").on('change', function(event){
+        var valor;
+        valor = $("#select-reg option:select").val();
+        $("#contenido").load("uusario/principal.php?num_reg="+ valor);
+        event.preventDefault();
+    });
+
+    /*busca el usuario*/
+    $("#like-user").on('change', function(event){
+         var valor;
+        valor = $("#like-user").val();
+        if(valor.trim() == "");
+             alertify.alert
+
+    });
+
+    /*cargar modal para actualizar clave*/
+    $("upd-key").click(function(){ 
+        $('#modalkeyUpd').modal('show');
+
+    });
+
+    /*cargar modal para actualizar usuario*/
+    $("upd-user").click(function(){ 
+       $('#UserUpd').modal('show');
+
+    });
+
+    /*paginado*/
+    $("a pagina").click(function(event){
+        var num, reg;
+        num = $(this).attr("v-num");
+        reg = $(this).attr("num-reg");
+        $("#contenido").load("usuarios/principal.php?num=" +  num + "&num_reg=" + reg );
+        Event.preventDefault();
+   });
+
+   /*Aumenta N° registros para el paginado*/
+   $("#select-reg").on('change', function(event){
+       var valor;
+       valor = $("#select-reg option: selected").val();
+       $("#contenido").load("usuarios/principal.php?num_reg=" + valor);
+        Event.preventDefault();
+   });
+ /*Aumenta N° registros para el paginado*/
+ $("#select-reg").on('change', function(event){
+    var valor;
+    valor = $("#select-reg option: selected").val();
+    $("#contenido").load("usuarios/principal.php?num_reg=" + valor);
+     event.preventDefault();
+});
+  /*busca el usuario*/ 
+  $("#like-user").on('change', function(event){
+      var valor;
+      valor = $("#like-user").val();
+      if(valor.trim ()=="")
+      {
+        alertify.alert("Busca Usuario", "No ingreso el nombre ó codigo de usuario a buscar...")
+        event.preventDefault();
+      }
+      else
+      { // alert (valor);
+        $("#contenido").load("usuarios/principal.php?like=1 &valor=" + valor);
+       // event.preventDefault();
+        
+      }
+  });
+
 });

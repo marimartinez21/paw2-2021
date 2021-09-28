@@ -1,12 +1,9 @@
-<?php
-    include '../../../models/conexion.php';
-    include '../../../controllers/procesos.php';
-    include '../../../models/procesos.php';
-
-    $dataUser = CRUD("SELECT * FROM usuarios;", "s");
-    $cont = 0;
-?>
-
+<style>
+       .cHead{
+           vertical-align: middle;
+           text-align: center;
+       }
+</style>
 <table class="table table-borderless table-responsive-xl">
     <thead class="bg-dark text-white">
         <tr>
