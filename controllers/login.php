@@ -10,6 +10,12 @@
         $passw = $_POST['passw'];
 
         AccesoLogin($user,$passw);
+
+
+    }
+    elseif(isset($_POST['Olvide']))
+    {
+        header("Location: ../views/olvide_clave.php");
     }
     else
     {

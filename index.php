@@ -94,6 +94,12 @@
                                 <button class="btn btn-success btn-sm" name="acclogin">Ingresar</button>
                             </div>
                         </form>
+                        <div style="margin-top: 10px;">
+                        <form action="./controllers/login.php".method="POST">
+                         <button class="btn btn-info" name="Olvide">Olvide Contraseña</button>
+                    </form>
+                    </div>
+                        
                     </div>
                 </div>
             </div>

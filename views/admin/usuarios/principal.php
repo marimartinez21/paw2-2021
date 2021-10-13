@@ -1,5 +1,6 @@
 <script src="../../public/js/funciones-navbar.js"></script>
 <script src="../../public/js/funciones-usuarios.js"></script>
+<script src="../../public/js/funciones.js"></script>
 <?php
     include '../../../models/conexion.php';
     include '../../../controllers/procesos.php';
@@ -77,7 +78,20 @@
                                 <option value="0" disabled selected>Seleccione Tipo</option>
                                 <option value="1">Administrador</option>
                                 <option value="2">Operador</option>
-                            </select>
+                            </select>  
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                 <span class="input-group-text" id="inputGroupFileAddon01">Foto</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file" name="Imagn" id="imagen"
+                                aria-describedby="inputGoupFileAddon01">
+                                <label for="custom-file-label" for="inputGoupFileAddon01" >Choose</label>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="width=200px" alt="" id="muestraimagen">
                         </div>
                         <div style="margin-top:10px">
                             <button class="btn btn-primary">Guardar</button>
